@@ -2,15 +2,18 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Joe's Social Blog!</title>
+        <title>Brody's Social Blog!</title>
         <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='css/style.css') }}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="/">Joe's Social Blog!</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="/">Brody's Social Blog!</a>
             <!-- Links -->
             <ul class="nav">
 
@@ -21,23 +24,25 @@
                       <a class="nav-link" href="{{ url_for('core.about') }}">About Us</a>
                     </li>
                       {% if current_user.is_authenticated %}
-                      <li class="nav-link"><a href="{{ url_for('users.logout') }}">Log Out</a></li>
-                      <li class="nav-link"><a href="{{ url_for('users.account') }}">Account</a></li>
-                      <li class="nav-link"><a href="{{ url_for('blog_posts.create_post') }}">Create Post</a></li>
+                      <li ><a class="nav-link" href="{{ url_for('users.logout') }}">Log Out</a></li>
+                      <li ><a class="nav-link" href="{{ url_for('users.account') }}">Account</a></li>
+                      <li ><a class="nav-link" href="{{ url_for('blog_posts.create_post') }}">Create Post</a></li>
                       {% else %}
-                      <li class="nav-link"><a href="{{ url_for('users.login') }}">Log In</a></li>
-                      <li class="nav-link"><a href="{{ url_for('users.register') }}">Register</a></li>
+                      <li ><a class="nav-link" href="{{ url_for('users.login') }}">Log In</a></li>
+                      <li ><a class="nav-link" href="{{ url_for('users.register') }}">Register</a></li>
                       {% endif %}
                   
                   </ul>
                 </nav>
+               
                   <div class="container">
                     {% block content %}
                   
                     {% endblock %}
                   </div>
+                </div>
 
-        <footer> J.S.B 2019™ </footer>
+        <footer> B.S.B 2019™ </footer>
 
     </body>
 </html>
