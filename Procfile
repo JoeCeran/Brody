@@ -1,2 +1,2 @@
 web: gunicorn gettingstarted.wsgi
-web: gunicorn app:SocialBlog
+web: gunicorn app:app
