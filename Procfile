@@ -1,2 +1,2 @@
 web: gunicorn gettingstarted.wsgi
-web: gunicorn app.py
+web: gunicorn puppycompanyblog:app --log-file=-
