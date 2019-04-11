@@ -1,2 +1,2 @@
 web: gunicorn gettingstarted.wsgi
-web: gunicorn puppycompanyblog:app --log-file=-
+web: gunicorn SocialBlog:app --log-file=-
