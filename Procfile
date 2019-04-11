@@ -1,2 +1,2 @@
 web: gunicorn gettingstarted.wsgi
-web: gunicorn app:flaskr
+web: gunicorn app:puppycompanyblog
