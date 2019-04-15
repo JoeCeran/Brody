@@ -12,9 +12,24 @@ body {
     height: 200px;
 }
 
+.card-time {
+    margin-bottom: 20px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.card-body {
+
+    background-color: rgb(230, 221, 221);
+    margin-bottom: 20px;
+    border-radius: 50px;
+    border: solid;
+}
+
 .card-title {
     color: black;
 }
+
 
 
 footer {
@@ -31,13 +46,36 @@ input {
     max-width: 500px;
 }
 
+.logo {
+    border-radius: 200px;
+    background-color: white;
+    max-width: 300px;
+}
+
+#logo {
+    height: 125px;
+    width: 200px;
+}
+
 .nav-link {
     color: white;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.Post {
+    border-radius: 50px;
 }
 
 .signin {
     text-align: center;
 }
+
+
+
+
 
 
 
