@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container">
+<div class="jumbotron">
   <form class="form-group" method="POST">
      {{ form.hidden_tag() }}
 
@@ -12,6 +12,10 @@
      {{ form.text.label(class="form-control-label") }}
      {{ form.text(class="form-control form-control-lg") }}
      </div>
+     <div class="form-group">
+      {{form.picture.label(class="form-group")}}
+      {{form.picture(class="form-control")}}
+      </div>
      <div class="form-group">
          {{ form.submit(class="btn btn-outline-info") }}
      </div>
